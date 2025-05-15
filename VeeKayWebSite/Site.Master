@@ -1,0 +1,289 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="VeeKayWebSite.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Veekay Consultancy Services - Index</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="images/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+        #header .logo img {
+            padding: 0;
+            margin: 1px 0;
+            max-height: 50px;
+        }
+
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+            height: 0;
+        }
+
+            .map-responsive iframe {
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" AsyncPostBackTimeout="360000">
+        </asp:ScriptManager>
+        <div>
+
+            <!-- ======= Header ======= -->
+            <header id="header" class="header-inner-pages">
+
+                <div id="topbar">
+                    <div class="container">
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+
+                    <div class="logo float-left">
+                        <!-- Uncomment below if you prefer to use an image logo -->
+                        <%--<h1 class="text-light"><a href="index.html" class="scrollto"><span>Rapid</span></a></h1>--%>
+                        <a href="index.aspx" class="scrollto">
+                            <img src="/images/logo.jpg" alt="" class="img-fluid"></a>
+
+                    </div>
+
+                    <nav class="main-nav float-right d-none d-lg-block">
+                        <ul>
+                            <li class="active"><a href="index.aspx">Home</a></li>
+                            <li><a href="index.aspx#about">About Us</a></li>
+                            <li><a href="index.aspx#services">Services</a></li>
+                            <li><a href="index.aspx#portfolio">Portfolio</a></li>
+                            <li><a href="Clients.aspx">Clients</a></li>
+                            <li><a href="index.aspx#team">Team</a></li>
+                            <li><a href="Career.aspx">Careers</a></li>
+                            <li><a href="Verify.aspx">Verify</a></li>
+
+                            <%--<li class="drop-down"><a href="">Drop Down</a>
+                                <ul>
+                                    <li><a href="#">Drop Down 1</a></li>
+                                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                                        <ul>
+                                            <li><a href="#">Deep Drop Down 1</a></li>
+                                            <li><a href="#">Deep Drop Down 2</a></li>
+                                            <li><a href="#">Deep Drop Down 3</a></li>
+                                            <li><a href="#">Deep Drop Down 4</a></li>
+                                            <li><a href="#">Deep Drop Down 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Drop Down 3</a></li>
+                                    <li><a href="#">Drop Down 4</a></li>
+                                    <li><a href="#">Drop Down 5</a></li>
+                                </ul>
+                            </li>--%>
+                            <li><a href="#footer">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <!-- .main-nav -->
+
+                </div>
+            </header>
+            <!-- #header -->
+
+
+            <div>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+            <!-- ======= Footer ======= -->
+            <footer id="footer" class="section-bg">
+                <div class="footer-top">
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="col-lg-6">
+
+                                <div class="row">
+
+                                    <div class="col-sm-6">
+
+                                        <div class="footer-info">
+                                            <h3>Veekay</h3>
+                                            <p>We have been providing software solutions in the areas of Television Channel, FM Radio, Hospital Management System, Data Warehousing, Inventory control, Financial Control, Shipping Industry, Logistics Management, Warehouse management, Mobile Application Development, Linux Softwares and Application development services in different other fields custom business applications.</p>
+                                        </div>
+
+                                        <h4>Our Office Location</h4>
+                                        <div class="map-responsive">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3264194026727!2d76.28523636953412!3d9.991589120147005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080cf7bfffffff%3A0x8eb1ed3394c31a9!2sVeeKay%20Consultancy%20Services!5e0!3m2!1sen!2sin!4v1721456561772!5m2!1sen!2sin" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="footer-links">
+                                            <h4>Useful Links</h4>
+                                            <ul>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#about">About us</a></li>
+                                                <li><a href="#">Services</a></li>
+                                                <li><a href="#">Terms of service</a></li>
+                                                <li><a href="#">Privacy policy</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="footer-links">
+                                            <h4>Contact Us</h4>
+                                            <p>
+                                                VEEKAY CONSULTANCY SERVICES
+                                                <br>
+                                                Mather Square Building<br />
+                                                67/517, C-Block, 6th Floor<br />
+                                                Opp North Railway Station<br />
+                                                Ernakulam North, Pin - 682 018
+                                                <br>
+                                                <strong>Phone:</strong> +91 484 3504374<br>
+                                                <strong>Email:</strong> mail@vkconsultancy.com
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspveekayit@gmail.com<br>
+                                            </p>
+                                        </div>
+
+                                        <div class="social-links">
+                                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="form">
+                                    <asp:UpdatePanel ID="UpdatePanel31" runat="server">
+                                        <ContentTemplate>
+
+                                            <h4>Send us a message</h4>
+                                            <p>Once you let us know your requirement, our technical expert will schedule a call and discuss your idea in detail.</p>
+
+                                            <div>
+                                                <div class="form-group">
+                                                    <asp:TextBox ID="name" runat="server" class="form-control" placeholder="Your Name"></asp:TextBox>
+                                                    <%--                                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />--%>
+                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter at least 4 chars"
+                                                        ControlToValidate="name" ValidationGroup="send">
+                                                    </asp:RequiredFieldValidator>
+                                                </div>
+                                                <div class="form-group">
+                                                    <asp:TextBox ID="email" runat="server" class="form-control" placeholder="Your Email"></asp:TextBox>
+
+                                                    <%--                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />--%>
+                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter a valid email"
+                                                        ControlToValidate="email" ValidationGroup="send">
+                                                    </asp:RequiredFieldValidator>
+                                                </div>
+                                                <div class="form-group">
+                                                    <asp:TextBox ID="subject" runat="server" class="form-control" placeholder="Subject"></asp:TextBox>
+                                                    <%--                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />--%>
+                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please enter at least 8 chars of subject"
+                                                        ControlToValidate="subject" ValidationGroup="send">
+                                                    </asp:RequiredFieldValidator>
+                                                </div>
+                                                <div class="form-group">
+                                                    <%--                                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>--%>
+                                                    <asp:TextBox ID="message" runat="server" class="form-control" Rows="5" TextMode="MultiLine" placeholder="Please write something for us"></asp:TextBox>
+                                                    <%--                                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>--%>
+                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Please enter at least 8 chars of subject"
+                                                        ControlToValidate="message" ValidationGroup="send">
+                                                    </asp:RequiredFieldValidator>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <%--     <div class="loading">Loading</div>
+                                            <div class="error-message"></div>
+                                            <div class="sent-message">Your message has been sent. Thank you!</div>--%>
+                                                </div>
+
+                                                <div class="text-center">
+                                                    <asp:Button ID="btnsubmit" runat="server" Text="Send Message" OnClick="btnsubmit_Click" ValidationGroup="send" />
+                                                    <asp:Label ID="lblmsg" runat="server" Text=""></asp:Label>
+                                                    <%--   <button type="submit" title="Send Message">Send Message</button>--%>
+                                                </div>
+                                            </div>
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="copyright">
+                        &copy; Copyright <strong>Veekay Consultancy Services</strong>. All Rights Reserved
+                    </div>
+
+                </div>
+            </footer>
+            <!-- End  Footer -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+            <!-- Vendor JS Files -->
+            <script src="assets/vendor/jquery/jquery.min.js"></script>
+            <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+            <script src="assets/vendor/php-email-form/validate.js"></script>
+            <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+            <script src="assets/vendor/counterup/counterup.min.js"></script>
+            <script src="assets/vendor/venobox/venobox.min.js"></script>
+            <script src="assets/vendor/mobile-nav/mobile-nav.js"></script>
+            <script src="assets/vendor/wow/wow.min.js"></script>
+            <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+            <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+
+            <!-- Template Main JS File -->
+            <script src="assets/js/main.js"></script>
+
+        </div>
+    </form>
+</body>
+</html>
